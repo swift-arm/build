@@ -3,8 +3,8 @@ pushd `dirname $0` > /dev/null
 WHERE_I_AM=`pwd`
 ARCH=`arch`
 popd > /dev/null
-INSTALL_DIR=${WHERE_I_AM}/install
-PACKAGE=${WHERE_I_AM}/swift.tar.gz
+INSTALL_DIR=${WHERE_I_AM}/../install
+PACKAGE=${WHERE_I_AM}/../swift.tar.gz
 LSB_RELEASE=`lsb_release -rs  | tr -d .`
 rm -rf $INSTALL_DIR $PACKAGE
 if [[ $ARCH =~ armv7 ]]; then
