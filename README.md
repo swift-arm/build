@@ -12,9 +12,9 @@ sudo apt-get install git git cmake ninja-build clang uuid-dev libicu-dev icu-dev
 Usage:
 
 ```
-./get.sh to initially populate the directory with the Swift repositories from Github
-./package.sh to build and package everything
-./update.sh to refresh your source code with the latest from Github
-./clean.sh to delete the build and install directory
-./distclean.sh to delete everything except the helper scripts
+./scripts/get.sh to initially populate the directory with the Swift repositories from Github
+./scripts/package.sh to build and package everything
+./scripts/update.sh to refresh your source code with the latest from Github
+./scripts/clean.sh to delete the build and install directory
+./scripts/distclean.sh to delete everything except the helper scripts
 ```
