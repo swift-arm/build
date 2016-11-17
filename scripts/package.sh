@@ -18,6 +18,7 @@ echo "+ Fixing up the install package for ARM"
 mkdir -p ${INSTALL_DIR}/usr/lib/swift
 cp -R swift-corelibs-libdispatch/dispatch/ ${INSTALL_DIR}/usr/lib/swift
 
+mkdir -p ${INSTALL_DIR}/usr/lib/swift/linux/armv7/
 cp ./build/buildbot_linux/libdispatch-linux-armv7/src/swift/Dispatch.swiftdoc ${INSTALL_DIR}/usr/lib/swift/linux/armv7/
 cp ./build/buildbot_linux/libdispatch-linux-armv7/src/swift/Dispatch.swiftmodule ${INSTALL_DIR}/usr/lib/swift/linux/armv7/
 cp ./build/buildbot_linux/libdispatch-linux-armv7/src/libdispatch.la ${INSTALL_DIR}/usr/lib/swift/linux/
