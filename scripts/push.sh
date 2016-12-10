@@ -6,7 +6,7 @@ for repo in $REPOS
 do
   pushd $repo
     echo Pushing changes to Swift-Arm
-    git push origin
+    git push -f origin
   popd
 done
 
