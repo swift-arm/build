@@ -6,6 +6,7 @@ REPOS="clang compiler-rt llvm"
 for repo in $REPOS
 do
   pushd $repo
+    echo --- REBASING ${repo}
     REMOTES=`git remote -v | wc -l`
     if [ $REMOTES -lt "4" ]; then
       echo Adding Apple repos
@@ -24,6 +25,7 @@ REPOS="cmark llbuild swift-corelibs-foundation swift-corelibs-xctest swiftpm lld
 for repo in $REPOS
 do
   pushd $repo
+    echo --- REBASING ${repo}
     REMOTES=`git remote -v | wc -l`
     if [ $REMOTES -lt "4" ]; then
       echo Adding Apple repos
