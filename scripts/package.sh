@@ -51,4 +51,6 @@ else
     ./swift/utils/build-script --preset=buildbot_linux_${LSB_RELEASE} install_destdir="${INSTALL_DIR}" installable_package="${PACKAGE}"
 fi
 
+echo "=> Done!"
+
 popd > /dev/null
