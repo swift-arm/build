@@ -5,6 +5,7 @@
 /llbuild/
 /lldb/
 /llvm/
+/ninja/
 /swift-corelibs-foundation/
 /swift-corelibs-libdispatch/
 /swift-corelibs-xctest/
