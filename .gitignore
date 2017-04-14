@@ -1,12 +1,25 @@
-swift
-llvm
-clang
-lldb
-cmark
-llbuild
-swiftpm
-swift-corelibs-xctest
-swift-corelibs-foundation
-build
-install
+# Repos
+/clang/
+/cmark/
+/compiler-rt/
+/llbuild/
+/lldb/
+/llvm/
+/ninja/
+/swift-corelibs-foundation/
+/swift-corelibs-libdispatch/
+/swift-corelibs-xctest/
+/swift-integration-tests/
+/swift-xcode-playground-support/
+/swift/
+/swiftpm/
+
+# Build artifacts
+/build/
+/install/
 swift.tar.gz
+
+# Other
+cache
+sysroot
+.DS_Store
