@@ -17,3 +17,8 @@ sudo apt-get install git cmake ninja-build clang python uuid-dev libicu-dev icu-
 `scripts/clean.sh`: Delete the build and install directory
 `scripts/distclean.sh `: Delete everything except the helper scripts
 
+`update.sh` can be configured using the following environment variables:
+`$SWIFT_SOURCE`: If set, this repository owner will be used for the initial checkout of the swift repository. By default it will use the ones from `swift-arm`.
+`$SWIFT_VERSION`: If set, this will be the branch the script tries to checkout for all sources. Defaults to `swift-3.1-branch` on the `swift-3.1` branch in this repo.
+
+
