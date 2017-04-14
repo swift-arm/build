@@ -7,10 +7,10 @@ pushd "$(dirname $0)/../" > /dev/null
 BRANCH=${SWIFT_VERSION:-swift-3.1-branch}
 
 if [ -d "./swift" ]; then
+    ./swift/utils/update-checkout --scheme $BRANCH
+else
     git clone https://github.com/swift-arm/swift -b $BRANCH swift && \
         ./swift/utils/update-checkout --clone --scheme $BRANCH
-else
-    ./swift/utils/update-checkout --scheme $BRANCH
 fi
 
 popd > /dev/null
