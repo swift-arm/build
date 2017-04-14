@@ -43,8 +43,8 @@ if [[ $(arch) =~ armv7 ]]; then
     echo "=> Fixing up the install package for ARM"
     fix_arm_install_package
 
-    echo "=> Retar installation package"
-    tar -czf "${PACKAGE}" "${INSTALL_DIR}" --owner=0 --group=0
+    echo "=> Re-tar installation package"
+    tar -C "${INSTALL_DIR}" -czf "${PACKAGE}" "usr/" --owner=0 --group=0
 else
     LSB_RELEASE=`lsb_release -rs  | tr -d .`
     echo "=> Building for x86 with linux_${LSB_RELEASE} buildbot"
