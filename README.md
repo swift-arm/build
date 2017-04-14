@@ -21,4 +21,9 @@ sudo apt-get install git cmake ninja-build clang python uuid-dev libicu-dev icu-
 `$SWIFT_SOURCE`: If set, this repository owner will be used for the initial checkout of the swift repository. By default it will use the ones from `swift-arm`.
 `$SWIFT_VERSION`: If set, this will be the branch the script tries to checkout for all sources. Defaults to `swift-3.1-branch` on the `swift-3.1` branch in this repo.
 
+## Examples
+
+`export SWIFT_SOURCE="apple"; export SWIFT_VERSION="swift-3.1-branch"; update.sh`
+This will checkout the original swift sources from Apple's repository using the `swift-3.1-branch` branch.
+
 
