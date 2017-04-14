@@ -1,19 +1,24 @@
-/swift/
-/llvm/
+# Repos
 /clang/
-/lldb/
 /cmark/
+/compiler-rt/
 /llbuild/
-/swiftpm/
-/swift-corelibs-xctest/
+/lldb/
+/llvm/
 /swift-corelibs-foundation/
+/swift-corelibs-libdispatch/
+/swift-corelibs-xctest/
+/swift-integration-tests/
+/swift-xcode-playground-support/
+/swift/
+/swiftpm/
+
+# Build artifacts
 /build/
 /install/
 swift.tar.gz
-/compiler-rt/
-/swift-corelibs-libdispatch/
-/swift-integration-tests/
-/swift-xcode-playground-support/
+
+# Other
 cache
-.DS_Store
 sysroot
+.DS_Store
